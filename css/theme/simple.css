@@ -39,7 +39,7 @@ body {
 
 .reveal {
   font-family: "Gotham-Round", sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
   color: #53555C; }
 
@@ -88,7 +88,8 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #0000f1;
+  color: #f05b62;
+  text-decoration: underline;
   text-shadow: none;
   border: none; }
 
@@ -115,6 +116,33 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-color:  #f05b62;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * LISTS
+ *********************************************/
+.reveal ul li, .reveal ol li {
+  /*font-size: 30px;*/
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.reveal .footnote {
+  text-align: left;
+  margin-top: 50px;
+}
+
+.reveal .footnote li {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.reveal sup {
+  font-size: 0.6em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.8em;
+}
+
 
 /*********************************************
  * NAVIGATION CONTROLS
@@ -169,7 +197,7 @@ body {
     width: 100%;
     bottom: 3px;
     left: 0;
-    z-index: 10; 
+    z-index: 10;
     font-size: 35%;
     text-align:left;
     background-image: url(../images/pink-logo.png);
