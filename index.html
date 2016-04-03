@@ -112,24 +112,41 @@
 				<img src = "images/alistapart.png" width="500"/>
 			</section>
 
+			<!-- Responsive vs. Adaptive -->
+			<section>
+				<h3>Responsive vs. Adaptive</h3>
+				<ul>
+					<li>Responsive web design inherently refers to web design that will <em>respond</em> to any and all screen sizes.</li>
+					<li>Adaptive design, on the other hand, <em>adapts</em> to the width of the browser only at specific points.</li>
+					<li>The two are different philosophies, and one is not inherently better than the other.</li>
+				</ul>
+				<img src="images/rwd-vs-adapt-example.gif" />
+				<p class="footnote">Source: <a href="https://css-tricks.com/the-difference-between-responsive-and-adaptive-design">CSS Tricks</a></p>
+			</section>
+
 			<!-- Why does responsive matter? -->
 			<section>
 				<h3>Why does Responsive matter?</h3>
 				<ul>
-					<li class="fragment">There are 1.75 Billion smartphone users worldwide.</li>
-					<li class="fragment">91% of smartphone users in the U.S. have their smart phone within reach 24/7.</li>
-					<li class="fragment">And many of them are checking their phones an average of 150x every day.</li>
-					<li class="fragment">25% of smartphone users in the U.S. don't even own a laptop or desktop computer.</li>
+					<li class="fragment">There are roughly 1.91 billion smartphone users worldwide. <sup>1</sup></li>
+					<li class="fragment">51% of digital media usage in the U.S. occurs on a mobile device, with 42% on a desktop or laptop computer. <sup>2</sup></li>
+					<li class="fragment">Between 2010 and 2014, smartphone usage increased 394%. <sup>3</sup></li>
+					<li class="fragment">10% of Americans do not have any other form of high-speed internet access at home beyond their phone's data plan. <sup>4</sup></li>
 				</ul>
+
+				<ol class="fragment footnote">
+					<li>SMS Global: <a href="http://www.smsglobal.com/thehub/smartphone-ownership-usage-and-penetration">Smartphone Ownership, Usage and Penetration by Country</a></li>
+					<li>Smart Insights: <a href="http://www.smartinsights.com/internet-marketing-statistics/insights-from-kpcb-us-and-global-internet-trends-2015-report">Insights from KPCB U.S. and Global Internet Trends 2015 Report</a></li>
+					<li>ComScore: <a href="https://www.comscore.com/Insights/Blog/Mobile-Internet-Usage-Skyrockets-in-Past-4-Years-to-Overtake-Desktop-as-Most-Used-Digital-Platform">Mobile Internet Usage Skyrockets</a></li>
+					<li>Pew Reasearch Center: <a href="http://www.pewinternet.org/2015/04/01/us-smartphone-use-in-2015">U.S. Smartphone Use in 2015</a></li>
+				</ol>
 			</section>
 
 			<!-- And because...-->
 			<section>
 				<h3>And because&hellip;</h3>
 				<ul>
-					<li class="fragment">Mobile web usage will surpass desktop internet usage by 2015.<br/>
-						<span class="fragment">So&hellip;that's already happened!</span>
-					</li>
+					<li class="fragment">Mobile web usage surpassed desktop internet usage in 2015.</li>
 					<li class="fragment">Our phones ARE our computers.</li>
 				</ul>
 			</section>
@@ -292,8 +309,13 @@
 				<h3>Making it Responsive: Typography</h3>
 				<p>Once upon a time, in 2005, type was always set in <code class="pretty">px</code>.</p>
 				<p>But today we need to account for our billions of devices and a range of pixel densities. So, we use more flexible units for setting our type, like <code class="pretty">em</code>s or <code class="pretty">rem</code>s.</p>
-				<p><a href="http://www.w3.org/WAI/GL/css2em.htm" target="_blank">Here's a good explanation of <code>em</code>s.</a></p>
-				<p><a href="http://snook.ca/archives/html_and_css/font-size-with-rem">Here's a good explanation of <code>rem</code>s.</a></p>
+				<p>
+					<br/>
+					<code class="pretty">em</code>s are a measurement relative to the font-size of the parent element <a href="http://www.w3.org/WAI/GL/css2em.htm" target="_blank">(more info)</a>
+					<br/><br/>
+					<code class="pretty">rem</code>s are also a relative measurement, but unlike <code class="pretty">em</code>s, <code class="pretty">rem</code>s are relative to the <em>root</em> (a.k.a. <code class="pretty">&lt;html&gt;</code>) font-size <a href="http://snook.ca/archives/html_and_css/font-size-with-rem" target="_blank">(more info)</a>
+					<br/><br/>
+				</p>
 				<p>Good to know: The browser default for fonts is <code class="pretty">16px</code>, which is <code class="pretty">1em</code> or <code class="pretty">1rem</code>.</p>
 			</section>
 
@@ -684,8 +706,7 @@ img {
 				<ul>
 					<li><a href="http://foundation.zurb.com/" target="_blank">Foundation</a></li>
 					<li><a href="http://www.getskeleton.com/" target="_blank">Skeleton</a></li>
-					<li><a href="http://gumbyframework.com/" target="_blank">Gumby</a></li>
-					<li><a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap</a></li>
+					<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
 				</ul>
 			</section>
 
@@ -694,6 +715,29 @@ img {
 				<h3>Frameworks give us: The Grid</h3>
 				<p style="text-align: left;">This is simply a 12-column flexible grid that can scale out to an arbitrary size (defined by the max-width of the row) that's easily nested. The widths are percentages. They've done the math for us!</p>
 				<img src="images/grid.png" width="700px"/>
+			</section>
+
+			<section>
+				<h3>Your own Customized Grid</h3>
+				<ul>
+					<li>Creating your own responsive grid isn't actually that hard! Basic grids contain four main building blocks:
+						<ul>
+							<li class="fragment">
+								<span class="pretty">container:</span> sets the width of the entire grid
+							 </li>
+							<li class="fragment">
+								<span class="pretty">rows:</span> keep columns inside from overflowing into other rows
+							</li>
+							<li class="fragment">
+								<span class="pretty">columns</span> groups elements in your layout and displays them alongside one another within a row
+							</li>
+							<li class="fragment">
+								<span class="pretty">gutters:</span> the spaces between the columns
+							</li>
+						</ul>
+					</li>
+					<li class="fragment">If you want to explore creating your own grid system further, check out <a href="http://j4n.co/blog/Creating-your-own-css-grid-system" target="_blank">this overview.</a></li>
+				</ul>
 			</section>
 
 			<!--
@@ -893,24 +937,6 @@ img {
 						<li>Concrete5</li>
 					</ul>
 				</div>
-			</section>
-
-			<!-- What's not responsive? -->
-			<section>
-				<h3>Is there anything that Responsive is NOT?</h3>
-				<p style="text-align: left;">Responsive is not a replacement for mobile apps, and is not always the go-to solution.</p>
-				<p  style="text-align: left;">We should assume that people will try to view a website on whatever device they have with them. It's up to us to provide the appropriate solutions for each app, website, and use case.</p>
-			</section>
-
-			<!-- Beyond responsive -->
-			<section>
-				<h3>This is beyond Responsive</h3>
-				<p style="text-align: left;">Sometimes there's another strategy happening, intentional or otherwise. Here's what Target has going on.</p>
-				<p style="text-align: left;">An m-dot mobile site, native app, full website on mobile, Cartwheel:</p>
-				<img src="images/target01.png" width="170px"/>
-				<img src="images/target5.png" width="170px"/>
-				<img src="images/target03.png" width="170px"/>
-				<img src="images/target04.png" width="170px"/>
 			</section>
 
 			<!-- Responsible -->
