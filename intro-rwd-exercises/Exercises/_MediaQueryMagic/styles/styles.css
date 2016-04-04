@@ -75,21 +75,21 @@ span {
 
 
 
-/*  media query examples  */
-@media (min-width: 300px) {
-  body {
-  	background: hotpink;
-  }
-}
+	/*  media query examples  */
+	@media (min-width: 300px) {
+	  body {
+	  	background: hotpink;
+	  }
+	}
 
-@media (min-width: 600px) {
-  body {
-  	background: skyblue;
-  }
-}
+	@media (min-width: 600px) {
+	  body {
+	  	background: skyblue;
+	  }
+	}
 
-@media (min-width: 900px) {
-  body {
-  	background: mediumpurple;
-  }
-}
+	@media (min-width: 900px) {
+	  body {
+	  	background: mediumpurple;
+	  }
+	}
