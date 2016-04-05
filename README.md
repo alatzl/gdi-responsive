@@ -25,16 +25,23 @@ Attendees should be comfortable with HTML and CSS. Specifically, you should unde
 
 - General Responsive Design Resources
   - http://alistapart.com/article/responsive-web-design
-  - https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/
+  - https://css-tricks.com/the-difference-between-responsive-and-adaptive-design
   - http://bradfrost.github.io/this-is-responsive/patterns.html
-  - http://mobile.smashingmagazine.com/2011/07/22/responsive-web-design-techniques-tools-and-design-strategies/
+  - http://mobile.smashingmagazine.com/2011/07/22/responsive-web-design-techniques-tools-and-design-strategies
+
+- Grids:
+  - https://css-tricks.com/dont-overthink-it-grids
+  - http://j4n.co/blog/Creating-your-own-css-grid-system
+  - http://adamkaplan.me/grid/
 
 - Responsive Typography:
   - http://typecast.com/blog/a-more-modern-scale-for-web-typography
-  - http://zellwk.com/blog/responsive-typography/
+  - http://zellwk.com/blog/responsive-typography
+  - http://zellwk.com/blog/rem-vs-em
+  - https://css-tricks.com/rems-ems
 
 - Responsive Images:
-  - http://alistapart.com/blog/post/why-responsive-images-matter/
+  - http://alistapart.com/blog/post/why-responsive-images-matter
   - http://alistapart.com/article/responsive-images-in-practice
   - https://ericportis.com/posts/2014/srcset-sizes/
 
@@ -43,9 +50,10 @@ Attendees should be comfortable with HTML and CSS. Specifically, you should unde
 
 - Media Queries
   - http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/#content
-  - http://mediaqueri.es/
-  - http://css-tricks.com/logic-in-media-queries/
-  - http://css-tricks.com/snippets/css/retina-display-media-query/
+  - http://mediaqueri.es
+  - http://css-tricks.com/logic-in-media-queries
+  - http://css-tricks.com/snippets/css/retina-display-media-query
+  - http://zellwk.com/blog/media-query-units/
 
 - Frameworks
   - http://alistapart.com/article/frameworks
