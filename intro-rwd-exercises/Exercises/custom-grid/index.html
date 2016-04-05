@@ -1,0 +1,92 @@
+<!doctype="html">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>GRIDS</title>
+	<link rel="stylesheet" type="text/css" href="styles/grid.css" />
+	<style type="text/css">
+		* {
+			font-family: sans-serif;
+			font-size: 14px;
+		}
+
+		.grid-container {
+			background: #efefef;
+			border: 2px solid #bbb;
+		}
+
+		[class*='col-'] {
+			margin: 1rem 0; 
+		}
+
+		[class*='col-'] > span {
+			display: block;
+			background: #ddd;
+			padding: 1rem 0.25rem;
+			border: 1px solid #ccc;
+			text-align: center;
+		}
+
+	</style>
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">	
+	</head>
+	<body>
+		<div class="grid-container">
+		<div class="row">
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+			<div class="col-1"><span>.col-1</span></div>
+		</div>
+
+		<div class="row">
+			<div class="col-2"><span>.col-2</span></div>
+			<div class="col-2"><span>.col-2</span></div>
+			<div class="col-2"><span>.col-2</span></div>
+			<div class="col-2"><span>.col-2</span></div>
+			<div class="col-2"><span>.col-2</span></div>
+			<div class="col-2"><span>.col-2</span></div>
+		</div>
+
+		<div class="row">
+			<div class="col-3"><span>.col-3</span></div>
+			<div class="col-3"><span>.col-3</span></div>
+			<div class="col-3"><span>.col-3</span></div>
+			<div class="col-3"><span>.col-3</span></div>
+		</div>
+
+		<div class="row">
+			<div class="col-4"><span>.col-4</span></div>
+			<div class="col-4"><span>.col-4</span></div>
+			<div class="col-4"><span>.col-4</span></div>
+		</div>
+
+		<div class="row">
+			<div class="col-6"><span>.col-6</span></div>
+			<div class="col-6"><span>.col-6</span></div>
+		</div>
+
+		<div class="row">
+			<div class="col-2"><span>.col-2</span></div>
+			<div class="col-8"><span>.col-8</span></div>
+			<div class="col-2"><span>.col-2</span></div>
+		</div>
+
+		<div class="row">
+			<div class="col-7"><span>.col-7</span></div>
+			<div class="col-2"><span>.col-2</span></div>
+			<div class="col-3"><span>.col-3</span></div>
+		</div>
+	</body>
+	</html>

@@ -1,0 +1,73 @@
+/*
+ * A simple, custom grid system to use on a responsive web site. 
+ * For simplicity, this a just 12-column fluid grid.
+ *
+ * Resources:
+ * 		https://css-tricks.com/dont-overthink-it-grids/
+ * 		http://j4n.co/blog/Creating-your-own-css-grid-system
+ *		http://adamkaplan.me/grid/
+ */
+
+/*
+ * CONTEXT
+ * This is the grid context; the element that will contain all
+ * rows and columns. Typically this will span the full width of
+ * the browser window, until it hits any maximum width set.
+ */
+.grid-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*
+ * Just to make sure our padding doesn't cause any elements to
+ * expand past the widths we set.
+ */
+.grid-container * {
+	box-sizing: border-box;
+}
+
+/*
+ * ROW
+ * Each row will contain up to 12 columns side-by-side
+ *
+ * We're using a clearfix here to make sure that each row contains
+ * all the children (columns) inside of it. Without this clearfix,
+ * floated elements do not expand the height of their parent container,
+ * causing the columns to appear outside of the row.
+ */
+.row:before, .row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/*
+ * COLUMNS
+ * Since we're using `box-sizing: border-box`, our columns will all
+ * create gutters within their given widths, and not push out into each
+ * other.
+ *
+ * We can then use padding within each column for the actual
+ * gutter. The left/right padding on each column should be half the
+ * total gutter width, since each column will have that padding amount
+ * on either side. 
+ */
+[class*='col-'] {
+	float: left;
+	padding: 0 1rem; /* this is our gutter */
+}
+
+.col-1  { width: 8.33%; }
+.col-2  { width: 16.66%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33%; }
+.col-5  { width: 41.66%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33%; }
+.col-8  { width: 66.66%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
